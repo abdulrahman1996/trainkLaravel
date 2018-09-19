@@ -27,3 +27,4 @@ Route::get('/testMail'  , function (){
     dispatch(new SendMail);
     echo 'email sent';
 });
+Route::get('documents/{document}' , 'DocumentController@show');
